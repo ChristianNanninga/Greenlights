@@ -147,7 +147,7 @@
         .navlogo {
             width: 80px;
             height: 80px;
-            background: url("images/Greenlights logo groen icoon.png") no-repeat center / cover;
+            background: url("./Greenlights logo groen icoon.png") no-repeat center / cover;
             position: relative;
             overflow: hidden;
             transition: all 0.3s ease;
@@ -166,8 +166,8 @@
             pointer-events: none;
 
             /* apply the mask always, so no recalculation needed on hover */
-            -webkit-mask-image: url("images/Greenlights logo groen icoon.png");
-            mask-image: url("images/Greenlights logo groen icoon.png");
+            -webkit-mask-image: url("./Greenlights logo groen icoon.png");
+            mask-image: url("./Greenlights logo groen icoon.png");
             mask-size: cover;
             mask-repeat: no-repeat;
             mask-position: center;
@@ -231,7 +231,7 @@
         /* ===== HEADER SECTION ===== */
         .headerBackground {
             height: 100vh;
-            background-image: url("images/output-onlinepngtools.png");
+            background-image: url("./output-onlinepngtools.png");
             background-size: cover;
             background-color: rgba(58, 63, 75, 0);
             background-blend-mode: darken;
