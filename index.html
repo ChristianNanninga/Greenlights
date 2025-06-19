@@ -22,8 +22,8 @@
             <span></span>
         </div>
         <div class="nav-links">
-            <a href="home.html"><b>Home</b></a>
-            <a href="about.html"><b>About</b></a>
+            <a href="https://christiannanninga.github.io/Greenlights/"><b>Home</b></a>
+            <a href="https://christiannanninga.github.io/Greenlights/pagina2.html"><b>About</b></a>
             <a href="contact.html"><b>Contact</b></a>
         </div>
     </nav>
@@ -156,26 +156,43 @@
             });
 
             // Header parallax animation
-            const header = document.querySelector('.header');
+            const header = document.querySelector('.headerTagline');
+            const background = document.querySelector('.headerBackground');
+
             let headerTargetX = 0, headerTargetY = 0;
             let headerCurrentX = 0, headerCurrentY = 0;
+
+            let bgTargetX = 0, bgTargetY = 0;
+            let bgCurrentX = 0, bgCurrentY = 0;
+
             const headerSensitivity = 0.007;
+            const bgSensitivity = 0.002; // you can make this a bit subtler if you like
 
             document.addEventListener('mousemove', function(e) {
-                const centerX = window.innerWidth / 10;
-                const centerY = window.innerHeight / 10;
+                const centerX = window.innerWidth / 2;
+                const centerY = window.innerHeight / 2;
 
+                // Header moves towards cursor
                 headerTargetX = (centerX - e.clientX) * headerSensitivity;
                 headerTargetY = (centerY - e.clientY) * headerSensitivity;
+
+                // Background moves opposite to cursor
+                bgTargetX = (e.clientX - centerX) * bgSensitivity;
+                bgTargetY = (e.clientY - centerY) * bgSensitivity;
             });
 
-            function animateHeader() {
+            function animateParallax() {
                 headerCurrentX += (headerTargetX - headerCurrentX) * 0.1;
                 headerCurrentY += (headerTargetY - headerCurrentY) * 0.1;
                 header.style.transform = `translate(${headerCurrentX}px, ${headerCurrentY}px)`;
-                requestAnimationFrame(animateHeader);
+
+                bgCurrentX += (bgTargetX - bgCurrentX) * 0.1;
+                bgCurrentY += (bgTargetY - bgCurrentY) * 0.1;
+                background.style.transform = `translate(${bgCurrentX}px, ${bgCurrentY}px)`;
+
+                requestAnimationFrame(animateParallax);
             }
-            animateHeader();
+            animateParallax();
 
             // Improved hamburger menu toggle with smooth animations
             const hamburger = document.getElementById('hamburger');
