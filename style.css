@@ -630,7 +630,8 @@
         }
         .close-button:hover {
             background-color: var(--color-tertiary);
-            border-radius: 2px;
+            border-radius: 3px;
+            transform: rotate(90deg);
             background-color: rgb(177, 5, 5);
             color: var(--color-secondary)
         }
@@ -646,13 +647,14 @@
             margin-top: 30px;
             margin-bottom: 20px;
             transition: all 0.3s ease;
-            border-radius: 4px;
+            border-radius: 3px;
             border: solid 2px rgb(177, 5, 5);
             color: rgb(177, 5, 5);
         }
         .close-button2:hover {
             background-color: var(--color-tertiary);
-            border-radius: 2px;
+            border-radius: 3px;
+            transform: rotate(90deg);
             background-color: rgb(177, 5, 5);
             color: var(--color-secondary)
         }
