@@ -1,688 +1,496 @@
-        /* ===== FONTS ===== */
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenlights</title>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link href="./Flavicon.png" type="image/x-icon" rel="icon">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="aurora-bg"></div>
+    <div class="stars" id="stars"></div>
+    <div class="northern-lights"></div>
 
-        /* ===== DEFAULT COLORS ===== */
-        :root {
-            --color-primary: rgb(0, 230, 104);
-            --color-secondary: rgb(255, 255, 255);
-            --color-tertiary: rgb(0, 32, 96);
-        }
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="https://christiannanninga.github.io/Greenlights/"><div class="navlogo"></div></a>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="home.html"><b>Home</b></a>
+            <a href="about.html"><b>About</b></a>
+            <a href="contact.html"><b>Contact</b></a>
+        </div>
+    </nav>
 
-        /* ===== RESET & BASE STYLES ===== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <!-- Header Section -->
 
-        body {
-            color: var(--color-secondary);
-            overflow-x: hidden;
-            --sb-track-color: rgb(235, 235, 235);
-            --sb-thumb-color: var(--color-primary);
-            --sb-size: 14px;
-        }
+<div id="openSolli" class="split left">
+  <div class="centered">
+    <div class="centered-text">
+      <div class="arrow-container">
+        <div class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      Solliciteer
+    </div>
+  </div>
+</div>
 
-        /* Custom Scrollbar */
-        body::-webkit-scrollbar {
-            width: var(--sb-size);
-        }
-        body::-webkit-scrollbar-track {
-            background: var(--sb-track-color);
-            border-radius: 0px;
-        }
-        body::-webkit-scrollbar-thumb {
-            background: var(--sb-thumb-color);
-            border-radius: 10px;
-            border: solid 3px rgb(235, 235, 235);
-        }
+<div id="openOpdrachtgever" class="split right">
+  <div class="centered">
+    <div class="centered-text">
+      Opdrachtgever
+      <div class="arrow-container">
+        <div class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content-solli">
+<div class="content-section">
+        <div id="close-button" class="close-button" style="cursor: pointer; padding: 20px; font-size: 20px;">✖</div>
+    <div class="section-title">Slimme instroom van IT-talent</div>
+    <div class="section-content">
+        <b>De IT-markt is krap. Maar jouw vacatures kunnen sneller gevuld zijn dan je denkt.</b><br />
+            <br /> 
+        IT-projecten lopen vertraging op. Teams raken overbelast. En ondanks alle moeite lukt het maar niet om geschikte starters te vinden die écht blijven.
+        Je bent niet alleen — en je hoeft het ook niet alleen op te lossen.<br />
+        <br />
+        Greenlights is er voor organisaties die vooruit willen.
+        Die nú mensen nodig hebben. En daar een <b>betrouwbare, nuchtere partner</b> bij zoeken. Geen poespas, geen vage beloftes. Gewoon een werkende oplossing voor duurzame IT-instroom.
+    </div>
+</div>
 
-        /* ===== BACKGROUND EFFECTS ===== */
-        .aurora-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(ellipse at bottom, #144525 0%, #2f4056 100%);
-            z-index: -2;
-        }
+<div class="content-section">
+    <div class="section-title">Waarom bedrijven voor Greenlights kiezen</div>
+    <div class="section-content">
+        “Greenlights regelt het.”
+        Dat is geen slogan, maar een belofte. En we maken 'm waar.<br />
+        <br />
+        Onze kandidaten zijn zorgvuldig geselecteerd op motivatie, leervermogen en match met jouw organisatie. We leiden ze kort en doelgericht op, begeleiden ze tijdens hun opdracht en zorgen dat ze via detavast kunnen instromen in jouw team.<br />
+        </br />
+        Hiermee onderscheiden we ons van traditionele detacheerders of traineeships. Geen overkill aan cv’s of generiek lesmateriaal, maar <b>concreet talent op maat.</b>
+    </div>
+</div>
 
-        .stars {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
+<div class="content-section">
+    <div class="section-title">Wat jij krijgt</div>
+        <div class="section-content-boxes">
+            <div class="box">
+                <div class="box-icon"><img src="./negotiation.png"></div>
+                <div class="box-content">Kandidaat die past bij jouw opdracht én teamcultuur</div>
+            </div>
+            <div class="box">
+                <div class="box-icon"><img src="./teach.png"></div>
+                <div class="box-content">Praktijkgerichte opleiding, afgestemd op jouw situatie</div>
+            </div>
+            <div class="box">
+                <div class="box-icon"><img src="./interview.png"></div>
+                <div class="box-content">Coaching & begeleiding tijdens de opdracht</div>
+            </div>
+            <div class="box">
+                <div class="box-icon"><img src="./customer-management.png"></div>
+            <div class="box-content">Detavast-constructie: iemand komt bij jou in dienst</div>
+            </div>
+            <div class="box">
+                <div class="box-icon"><img src="./get-money.png"></div>
+            <div class="box-content">Geen verborgen kosten, geen kleine lettertjes</div>
+            </div>
+        </div>
+</div>
 
-        .star {
-            position: absolute;
-            background-color: var(--color-secondary);
-            border-radius: 50%;
-            opacity: 0;
-            animation: twinkle 5s infinite;
-        }
+<div class="content-section">
+    <div class="section-title">Hoe het werkt</div>
+    <div class="section-content">
+        1.	<b>Kennismaking & behoefte</b><br />
+        We luisteren. Waar loop je tegenaan? Wat moet er echt nú opgelost worden?<br />
+        <br />
+        2.	<b>Match & voorbereiding</b><br />
+        We stellen een kandidaat voor en leiden die gericht op voor jouw opdracht.<br />
+        <br />
+        3.	<b>Start & begeleiding</b><br />
+        De kandidaat begint via detachering. Wij blijven betrokken, coachen en sturen bij.<br />
+        <br />
+        4.	<b>Overname & toekomst</b><br />
+        Na afloop neem je de kandidaat kosteloos over. Een nieuwe collega, die al is ingewerkt.<br />
+    </div>
+</div>
 
-        .northern-lights {
-            position: fixed;
-            top: 30%;
-            left: 0;
-            width: 100%;
-            height: 50%;
-            background: linear-gradient(to bottom, transparent, rgba(0, 255, 128, 0.5) 40%, transparent);
-            z-index: -1;
-            transform: skewY(-10deg);
-            animation: aurora 20s infinite alternate;
-        }
+<div class="content-section">
+    <div class="section-title">Hoe we Cialdini toepassen<br />
+        (en waarom dit werkt)</div>
+    <table id="section-table">
+        <tr>
+            <td style="text-align: right;"><b>Cialdini Principe</b></td>
+            <td style="text-align: left"><b>Verwerkt in de content via...</b></td>
+        </tr>
+        <tr>
+            <td style="text-align: right;"><b>Wederkerigheid</b></td>
+            <td style="text-align: left">We investeren vanaf dag 1: opleiding, begeleiding, en geen kosten bij overname.</td>
+        </tr>
+        <tr>
+            <td style="text-align: right;"><b>Schaarste</b></td>
+            <td style="text-align: left">“De IT-markt is krap”, “Je hebt nú mensen nodig” – we spelen in op urgentie en beperkt aanbod.</td>
+        </tr>
+        <tr>
+            <td style="text-align: right;"><b>Autoriteit</b></td>
+            <td style="text-align: left">We tonen expertise door een heldere, resultaatgerichte aanpak zonder loze beloftes.</td>
+        </tr>
+        <tr>
+            <td style="text-align: right;"><b>Consistentie</b></td>
+            <td style="text-align: left">Alles draait om één heldere kernbelofte: Greenlights regelt het. Die voeren we in alles door.</td>
+        </tr>
+        <tr>
+            <td style="text-align: right;"><b>Sympathie</b></td>
+            <td style="text-align: left">Nuchtere, betrokken en eerlijke toon. Geen jargon. Geen afstand. Wel persoonlijk contact.</td>
+        </tr>
+        <tr>
+            <td style="text-align: right;"><b>Sociale bewijskracht</b></td>
+            <td style="text-align: left">We benoemen dat je niet de enige bent met dit probleem – en dat anderen al voor Greenlights kiezen.</td>
+        </tr>
+        <tr>
+            <td style="text-align: right;"><b>Commitment</b></td>
+            <td style="text-align: left">Detavast werkt met een duidelijk groeipad: jij bouwt met ons, en zij bouwen bij jou verder.</td>
+        </tr>
+    </table>
+</div>
 
-        /* ===== ANIMATIONS ===== */
-        @keyframes twinkle {
-            /* 0% { opacity: 0; }
-            50% { opacity: 0.8; } */
-            100% { opacity: 0.0; }
-        }
+<div class="content-section">
+    <div class="section-title">Klaar om iets te veranderen?</div>
+    <div class="section-content">
+        We horen het vaak: <i>“We zoeken al maanden, maar het lukt gewoon niet.”</i><br />
+        Dan is dit het moment om het anders aan te pakken.<br />
+        Greenlights helpt je vooruit — met de mensen die willen, kunnen en blijven.<br />
+        <div class="call-for-action-buttons">
+            <button class="btn2"><span class="btn-text">Plan gesprek</span></button>
+            <button class="btn2"><span class="btn-text">Neem contact op</span></button>
+            </div>
+        Samen maken we instroom weer werkend. 
+    </div>
+</div>
+<!-- Footer -->
+<div class="footer">
+    COPYRIGHT GREENLIGHTS 2025
+</div>
+</div>
+    <div class="content-opdrachtgever">
+    <div class="content-section">
+        <div id="close-button2" class="close-button2" style="cursor: pointer; padding: 20px; font-size: 20px;">✖</div>
+        <div class="section-title">Slimme instroom van IT-talent</div>
+        <div class="section-content">
+            <b>De IT-markt is krap. Maar jouw vacatures kunnen sneller gevuld zijn dan je denkt.</b><br />
+                <br /> 
+            IT-projecten lopen vertraging op. Teams raken overbelast. En ondanks alle moeite lukt het maar niet om geschikte starters te vinden die écht blijven.
+            Je bent niet alleen — en je hoeft het ook niet alleen op te lossen.<br />
+            <br />
+            Greenlights is er voor organisaties die vooruit willen.
+            Die nú mensen nodig hebben. En daar een <b>betrouwbare, nuchtere partner</b> bij zoeken. Geen poespas, geen vage beloftes. Gewoon een werkende oplossing voor duurzame IT-instroom.
+        </div>
+    </div>
 
-        @keyframes aurora {
-            0% {
-                opacity: 0.5;
-                transform: skewY(-5deg);
+    <div class="content-section">
+        <div class="section-title">Waarom bedrijven voor Greenlights kiezen</div>
+        <div class="section-content">
+            “Greenlights regelt het.”
+            Dat is geen slogan, maar een belofte. En we maken 'm waar.<br />
+            <br />
+            Onze kandidaten zijn zorgvuldig geselecteerd op motivatie, leervermogen en match met jouw organisatie. We leiden ze kort en doelgericht op, begeleiden ze tijdens hun opdracht en zorgen dat ze via detavast kunnen instromen in jouw team.<br />
+            </br />
+            Hiermee onderscheiden we ons van traditionele detacheerders of traineeships. Geen overkill aan cv’s of generiek lesmateriaal, maar <b>concreet talent op maat.</b>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="section-title">Wat jij krijgt</div>
+            <div class="section-content-boxes">
+                <div class="box">
+                    <div class="box-icon"><img src="./negotiation.png"></div>
+                    <div class="box-content">Kandidaat die past bij jouw opdracht én teamcultuur</div>
+                </div>
+                <div class="box">
+                    <div class="box-icon"><img src="./teach.png"></div>
+                    <div class="box-content">Praktijkgerichte opleiding, afgestemd op jouw situatie</div>
+                </div>
+                <div class="box">
+                    <div class="box-icon"><img src="./interview.png"></div>
+                    <div class="box-content">Coaching & begeleiding tijdens de opdracht</div>
+                </div>
+                <div class="box">
+                    <div class="box-icon"><img src="./customer-management.png"></div>
+                <div class="box-content">Detavast-constructie: iemand komt bij jou in dienst</div>
+                </div>
+                <div class="box">
+                    <div class="box-icon"><img src="./get-money.png"></div>
+                <div class="box-content">Geen verborgen kosten, geen kleine lettertjes</div>
+                </div>
+            </div>
+    </div>
+
+    <div class="content-section">
+        <div class="section-title">Hoe het werkt</div>
+        <div class="section-content">
+            1.	<b>Kennismaking & behoefte</b><br />
+            We luisteren. Waar loop je tegenaan? Wat moet er echt nú opgelost worden?<br />
+            <br />
+            2.	<b>Match & voorbereiding</b><br />
+            We stellen een kandidaat voor en leiden die gericht op voor jouw opdracht.<br />
+            <br />
+            3.	<b>Start & begeleiding</b><br />
+            De kandidaat begint via detachering. Wij blijven betrokken, coachen en sturen bij.<br />
+            <br />
+            4.	<b>Overname & toekomst</b><br />
+            Na afloop neem je de kandidaat kosteloos over. Een nieuwe collega, die al is ingewerkt.<br />
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="section-title">Hoe we Cialdini toepassen<br />
+            (en waarom dit werkt)</div>
+        <table id="section-table">
+            <tr>
+                <td style="text-align: right;"><b>Cialdini Principe</b></td>
+                <td style="text-align: left"><b>Verwerkt in de content via...</b></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><b>Wederkerigheid</b></td>
+                <td style="text-align: left">We investeren vanaf dag 1: opleiding, begeleiding, en geen kosten bij overname.</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><b>Schaarste</b></td>
+                <td style="text-align: left">“De IT-markt is krap”, “Je hebt nú mensen nodig” – we spelen in op urgentie en beperkt aanbod.</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><b>Autoriteit</b></td>
+                <td style="text-align: left">We tonen expertise door een heldere, resultaatgerichte aanpak zonder loze beloftes.</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><b>Consistentie</b></td>
+                <td style="text-align: left">Alles draait om één heldere kernbelofte: Greenlights regelt het. Die voeren we in alles door.</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><b>Sympathie</b></td>
+                <td style="text-align: left">Nuchtere, betrokken en eerlijke toon. Geen jargon. Geen afstand. Wel persoonlijk contact.</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><b>Sociale bewijskracht</b></td>
+                <td style="text-align: left">We benoemen dat je niet de enige bent met dit probleem – en dat anderen al voor Greenlights kiezen.</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><b>Commitment</b></td>
+                <td style="text-align: left">Detavast werkt met een duidelijk groeipad: jij bouwt met ons, en zij bouwen bij jou verder.</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="content-section">
+        <div class="section-title">Klaar om iets te veranderen?</div>
+        <div class="section-content">
+            We horen het vaak: <i>“We zoeken al maanden, maar het lukt gewoon niet.”</i><br />
+            Dan is dit het moment om het anders aan te pakken.<br />
+            Greenlights helpt je vooruit — met de mensen die willen, kunnen en blijven.<br />
+            <div class="call-for-action-buttons">
+                <button class="btn2"><span class="btn-text">Plan gesprek</span></button>
+                <button class="btn2"><span class="btn-text">Neem contact op</span></button>
+                </div>
+            Samen maken we instroom weer werkend. 
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        COPYRIGHT GREENLIGHTS 2025
+    </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create stars
+            const starsContainer = document.getElementById('stars');
+            const starCount = 150;
+
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+
+                const top = Math.random() * 100;
+                const left = Math.random() * 100;
+                star.style.top = `${top}%`;
+                star.style.left = `${left}%`;
+
+                const size = Math.random() * 2 + 1;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+
+                const delay = Math.random() * 5;
+                star.style.animationDelay = `${delay}s`;
+
+                starsContainer.appendChild(star);
             }
-            50% {
-                opacity: 0.7;
-                transform: skewY(-3deg);
+            // Slides sollicitatie page in from left
+            document.getElementById('openSolli').addEventListener('click', function () {
+                document.querySelector('.content-solli').classList.add('active');
+            });
+            document.querySelector('.close-button').addEventListener('click', function () {
+                document.querySelector('.content-solli').classList.remove('active');
+            });
+
+            // Slides opdrachtgever page in from right
+            document.getElementById('openOpdrachtgever').addEventListener('click', function () {
+                document.querySelector('.content-opdrachtgever').classList.add('active');
+            });
+             document.querySelector('.close-button2').addEventListener('click', function () {
+                document.querySelector('.content-opdrachtgever').classList.remove('active');
+            });
+            // Smooth scroll functionality
+            document.getElementById('scrollDown').addEventListener('click', function() {
+                window.scrollTo({
+                    top: window.innerHeight - 110,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Animation for sections when they come into view
+            const sections = document.querySelectorAll('.section-title, .section-content, .btn2');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '-50px -50px -50px -50px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+
+                        // Stop observing this element after animation has run once
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                section.style.opacity = 0;
+                section.style.transform = 'translateY(50px)';
+                section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(section);
+            });
+
+            // Header parallax animation
+            const header = document.querySelector('.headerTagline');
+            const background = document.querySelector('.headerBackground');
+
+            let headerTargetX = 0, headerTargetY = 0;
+            let headerCurrentX = 0, headerCurrentY = 0;
+
+            let bgTargetX = 0, bgTargetY = 0;
+            let bgCurrentX = 0, bgCurrentY = 0;
+
+            const headerSensitivity = 0.007;
+            const bgSensitivity = 0.002; // you can make this a bit subtler if you like
+
+            document.addEventListener('mousemove', function(e) {
+                const centerX = window.innerWidth / 2;
+                const centerY = window.innerHeight / 2;
+
+                // Header moves towards cursor
+                headerTargetX = (centerX - e.clientX) * headerSensitivity;
+                headerTargetY = (centerY - e.clientY) * headerSensitivity;
+
+                // Background moves opposite to cursor
+                bgTargetX = (e.clientX - centerX) * bgSensitivity;
+                bgTargetY = (e.clientY - centerY) * bgSensitivity;
+            });
+
+            function animateParallax() {
+                headerCurrentX += (headerTargetX - headerCurrentX) * 0.1;
+                headerCurrentY += (headerTargetY - headerCurrentY) * 0.1;
+                header.style.transform = `translate(${headerCurrentX}px, ${headerCurrentY}px)`;
+
+                bgCurrentX += (bgTargetX - bgCurrentX) * 0.1;
+                bgCurrentY += (bgTargetY - bgCurrentY) * 0.1;
+                background.style.transform = `translate(${bgCurrentX}px, ${bgCurrentY}px)`;
+
+                requestAnimationFrame(animateParallax);
             }
-            100% {
-                opacity: 0.5;
-                transform: skewY(-7deg);
-            }
-        }
+            animateParallax();
 
-        @keyframes fadeUp {
-            0% {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            60% {
-                opacity: 1;
-                transform: translateY(-30px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            50% { opacity: 0; }
-            100% { opacity: 1; }
-        }
+            // Improved hamburger menu toggle with smooth animations
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            let isMenuOpen = false;
 
-        @keyframes fadeUpTagline {
-            100% {
-                opacity: 1;
-                transform: translateY(0px);
-            }
-        }
+            hamburger.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                isMenuOpen = !isMenuOpen;
+                
+                // Toggle classes with improved timing
+                navLinks.classList.toggle('active', isMenuOpen);
+                hamburger.classList.toggle('toggle', isMenuOpen);
+                
 
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-20%); }
-            40% { transform: translateY(-10px) translateX(-20%); }
-            60% { transform: translateY(-5px) translateX(-20%); }
-        }
+            });
 
-        /* ===== NAVIGATION ===== */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.3);
-            color: var(--color-primary);
-            padding: 1rem 2rem;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-            backdrop-filter: blur(5px);
-        }
-        .navlogo {
-            width: 80px;
-            height: 80px;
-            background: url("./Greenlights logo groen icoon.png") no-repeat center / cover;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-        .navlogo:hover {
-            transform: scale(0.95);
-        }
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (isMenuOpen && !hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                    isMenuOpen = false;
+                    navLinks.classList.remove('active');
+                    hamburger.classList.remove('toggle');
+                    document.body.style.overflow = 'auto';
+                }
+            });
 
-        .navlogo::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background-color: var(--color-secondary);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            pointer-events: none;
+            // Close menu when clicking on a link
+            const navLinksElements = navLinks.querySelectorAll('a');
+            navLinksElements.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth <= 768) {
+                        isMenuOpen = false;
+                        navLinks.classList.remove('active');
+                        hamburger.classList.remove('toggle');
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            });
 
-            /* apply the mask always, so no recalculation needed on hover */
-            -webkit-mask-image: url("./Greenlights logo groen icoon.png");
-            mask-image: url("./Greenlights logo groen icoon.png");
-            mask-size: cover;
-            mask-repeat: no-repeat;
-            mask-position: center;
-        }
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768 && isMenuOpen) {
+                    isMenuOpen = false;
+                    navLinks.classList.remove('active');
+                    hamburger.classList.remove('toggle');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+        const imagesToPreload = [
+        './output-onlinepngtools.png',
+        './output-onlinepngtools2.png',
+        './output-onlinepngtools3.png',
+        './output-onlinepngtools4.png'
+        ];
 
-        .navlogo:hover::after {
-            opacity: 1;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 1.5rem;
-            /* Smooth transition properties */
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .nav-links a {
-            color: var(--color-primary);
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border: solid 1px rgb(0, 230, 104, 0);
-            border-radius: 25px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 18px;
-            transition: all 0.4s ease;
-            text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.0);
-            /* Add smooth opacity and transform transitions for mobile */
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .nav-links a:hover {
-            /* background-color: rgba(0, 230, 104, 1);
-            border: solid 1px white;
-            border-radius: 2px;
-            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); */
-            color: var(--color-secondary);
-            transform: scale(0.95);
-        }
-
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-            z-index: 1100;
-            padding: 5px;
-        }
-
-        .hamburger span {
-            height: 3px;
-            width: 25px;
-            background: var(--color-primary);
-            border-radius: 5px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            transform-origin: center;
-        }
-
-        /* ===== HEADER SECTION ===== */
-        .headerBackground {
-            height: 100vh;
-            background-image: url("./output-onlinepngtools.png");
-            background-size: cover;
-            background-color: rgba(58, 63, 75, 0);
-            background-blend-mode: darken;
-        }
-
-        .header {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: left;
-            position: relative;
-            overflow: hidden;
-            padding: 50px;
-            background: repeating-linear-gradient( 23deg, rgba(235, 235, 235, 0.115) 0px, rgb(235, 235, 235, 0.1) 5px, rgb(237, 237, 237, 0.1) 6px, rgb(237, 237, 237, 0.1) 11px, rgb(237, 237, 237, 0.1) 12px);
-        }
-
-        .headerTagline {
-            width: 50vw;
-            text-align: right;
-            align-items: right;
-            justify-content: right;
-            pointer-events: none;
-        }
-        .headerButtons {
-            padding: 30px 0px 0px 0px;
-            display: flex;
-            gap: 50px;
-            width: 50vw;
-            text-align: right;
-            align-items: right;
-            justify-content: right;
-        }
-        .call-for-action-buttons {
-            padding: 20px 0px 20px 0px;
-            display: flex;
-            gap: 50px;
-            width: 50vw;
-            text-align: left;
-            align-items: left;
-            justify-content: left;
-        }
-
-        .word {
-            display: flex;
-            color: var(--color-primary);
-            font-size: 8vw;
-            justify-content: space-between;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-        }
-
-        .letter {
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeUp 0.6s ease forwards;
-        }
-
-        /* Letter animation delays */
-        .letter:nth-child(1) { animation-delay: 0.00s; }
-        .letter:nth-child(2) { animation-delay: 0.05s; }
-        .letter:nth-child(3) { animation-delay: 0.12s; }
-        .letter:nth-child(4) { animation-delay: 0.21s; }
-        .letter:nth-child(5) { animation-delay: 0.32s; }
-        .letter:nth-child(6) { animation-delay: 0.45s; }
-        .letter:nth-child(7) { animation-delay: 0.45s; }
-        .letter:nth-child(8) { animation-delay: 0.45s; }
-        .letter:nth-child(9) { animation-delay: 0.45s; }
-        .letter:nth-child(10) { animation-delay: 0.45s; }
-        .letter:nth-child(11) { animation-delay: 0.45s; }
-
-        .tagline {
-            color: var(--color-secondary);
-            font-size: 1.1vw;
-            letter-spacing: 3px;
-            opacity: 0;
-            animation: fadeUpTagline 1s linear(0, 0.115 2.2%, 0.877 9.4%, 1.016 11.9%, 1.081 14.7%, 1.088 16%, 1.084 17.5%, 1.013 25.3%, 0.993 30.8%, 1.001 46.8%, 1) forwards;
-            animation-delay: 0.9s;
-            transform: translateY(-30px);
-            font-family: 'Roboto', sans-serif;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-
-        .scroll-indicator {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-20%);
-            animation: bounce 2s infinite;
-            cursor: pointer;
-            transition: transform 0.1s ease;
-        }
-
-        .scroll-indicator svg {
-            width: 30px;
-            height: 30px;
-            fill: var(--color-primary);
-        }
-
-        /* ===== CONTENT SECTIONS ===== */
-        .content-section {
-            padding: 100px 10%;
-            min-height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: relative;
-            transition: all 0.5s ease;
-            font-family: 'Montserrat', sans-serif;
-            background: repeating-linear-gradient( 23deg, rgba(235, 235, 235, 0.115) 0px, rgb(235, 235, 235, 0.1) 5px, rgb(237, 237, 237, 0.1) 6px, rgb(237, 237, 237, 0.1) 11px, rgb(237, 237, 237, 0.1) 12px);
-        }
-
-        .content-section:nth-child(even) {
-            background-color: rgb(235, 235, 235);
-            background: repeating-linear-gradient( 23deg, rgb(235, 235, 235) 0px, rgb(235, 235, 235) 5px, rgb(237, 237, 237) 6px, rgb(237, 237, 237) 11px, rgb(237, 237, 237) 12px); 
-            color: black;
-            text-align: right;
-        }
-
-        .content-section:nth-child(even) .section-title,
-        .content-section:nth-child(even) .section-content,
-        .content-section:nth-child(even) .btn2 {
-            margin-left: auto;
-            margin-right: 0;
-        }
-        .content-section:nth-child(even) .section-title::after {
-            left: auto;
-            right: 0;
-        }
-        .section-title {
-            font-size: 2.5rem;
-            text-transform: capitalize;
-            margin-bottom: 2rem;
-            color: var(--color-primary);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background-color: var(--color-primary);
-            transition: width 0.3s ease-in-out;
-        }
-
-        .section-title:hover::after {
-            width: 20%;
-        }
-
-        .section-content {
-            text-align: left;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            max-width: 800px;
-            opacity: 0.9;
-            margin-bottom: 2rem;
-            transform: translateY(0);
-            transition: transform 0.5s ease, opacity 0.5s ease;
-        }
-
-        .section-content:hover {
-            transform: translateY(-5px);
-            opacity: 1;
-        }
-        #section-table {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        #section-table td {
-            padding:10px;
-        }
-
-        .section-content-boxes {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-            margin-top: 2rem;
-        }
-
-        .box-content {
-            padding: 10px 10px 10px 0px;
-            display: flex;
-            text-align: left;
-            justify-content: center;
-            align-items: flex-start;
-            font-size: 1.3vw;
-            font-weight: 700;
-            width: 13vw;
-            height: 10vw;
-            border-top: solid 3px black;
-            border-radius: 2px;
-            color: black;
-            overflow: hidden;
-        }
-        .box-icon {
-            padding: 10px;
-            display: flex;
-            height: 10vw;
-            justify-content: center;
-            align-items: flex-start;
-        }
-        .box img {
-            height: 100%;
-            width: auto;
-        }
-        .btn2 {
-            border: 3px solid var(--color-primary);
-            background-color: rgba(0, 230, 104, 0);
-            border-radius: 25px;
-            min-width: 300px;
-            height: 40px;
-            width: 20%;
-            text-align: center;
-            color: var(--color-primary);
-            font-size: 1.05rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.5s ease !important;
-            box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.0);
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn2::after {
-            content: '\2794';  /* ➔ */
-            position: absolute;
-            right: 20px;
-            opacity: 0;
-            transform: translateX(-20px);
-            transition: all 0.3s ease;
-            color: inherit;
-            font-size: 1.5rem;
-            margin-top: -3px;
-        }
-        .btn2:nth-child(1) {
-            background-color: var(--color-secondary);
-            color: var(--color-primary);
-            border-color: var(--color-secondary);
-            animation: fadeIn 2.3s;
-        }
-        .btn2:nth-child(2) {       
-            background-color: var(--color-primary);
-            color: var(--color-secondary);
-            border-color: var(--color-primary);
-            animation: fadeIn 2.3s;
-        }
-        .btn-text {
-            transition: all 0.3s ease;
-        }
-
-        .btn2:hover {
-            border: solid 3px rgba(255, 255, 255, 0);
-            background-color: var(--color-primary);
-            color: var(--color-secondary);
-        }
-        .btn2:nth-child(1):hover {
-            background-color: var(--color-secondary);
-            color: var(--color-primary);
-            border-color: var(--color-secondary);
-        }
-        .btn2:hover::after {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .btn2:hover .btn-text {
-            transform: translateX(-10px);  /* Move text slightly left on hover */
-        }
-
-
-        /* ===== FOOTER ===== */
-        .footer {
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.1);
-            color: rgba(255, 255, 255, 0.322);
-            padding: 30px;
-            position: relative;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(5px);
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        /* ===== RESPONSIVE DESIGN ===== */
-        @media (max-width: 1280px) {
-            .headerButtons {
-                flex-direction: column;
-                align-items: flex-end;
-                gap: 20px;
-            }
-            .call-for-action-buttons {
-                flex-direction: column;
-                align-items: flex-end;
-                gap: 20px;
-            }
-        }
-        @media (max-width: 768px) {
-            .navbar {
-                padding: 1rem 2rem;
-            }
-            .navlogo {
-                height: 40px;
-                width: 40px;
-            }
-            .hamburger {
-                display: flex;
-            }
-
-            .nav-links {
-                position: fixed;
-                top: 113px;
-                left: 0;
-                flex-direction: column;
-                align-items: center;
-                background-color: rgba(0, 0, 0, 0.6);
-                backdrop-filter: blur(10px);
-                width: 100%;
-                height: auto;
-                gap: 0;
-                z-index: -1;
-                /* Improved smooth transitions */
-                transform: translateY(-100%);
-                opacity: 0;
-                visibility: hidden;
-                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            }
-
-            .nav-links a {
-                font-size: 1.5rem;
-                padding: 1rem 2rem;
-                width: 100%;
-                text-align: center;
-                margin: 0.5rem 0;
-                /* Individual link animations */
-                transform: translateY(-20px);
-                opacity: 0;
-                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            }
-
-            /* Active state with staggered animation */
-            .nav-links.active {
-                transform: translateY(0);
-                opacity: 1;
-                visibility: visible;
-            }
-
-            .nav-links.active a {
-                transform: translateY(0);
-                opacity: 1;
-            }
-
-            /* Staggered animation delays for links */
-            .nav-links.active a:nth-child(1) {
-                transition-delay: 0.1s;
-            }
-
-            .nav-links.active a:nth-child(2) {
-                transition-delay: 0.2s;
-            }
-
-            .nav-links.active a:nth-child(3) {
-                transition-delay: 0.3s;
-            }
-
-            /* Improved hamburger animation */
-            .hamburger.toggle span:nth-child(1) {
-                transform: rotate(45deg) translate(6px, 6px);
-            }
-
-            .hamburger.toggle span:nth-child(2) {
-                opacity: 0;
-                transform: scale(0);
-            }
-
-            .hamburger.toggle span:nth-child(3) {
-                transform: rotate(-45deg) translate(6px, -6px);
-            }
-
-            .header {
-                align-content: space-around;
-                flex-wrap: wrap;
-            }
-
-            .word {
-                font-size: 10vw;
-                justify-content: center;
-            }
-
-            .tagline {
-                font-size: 3vw;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .section-content {
-                font-size: 1rem;
-            }
-            .section-content-boxes {
-                flex-direction: column;
-                gap: 2vw;
-            }
-            .box {
-                display: flex;
-                flex-direction: row;
-            }
-            .box-content {
-                height: 5vw;
-                width: 80vw;
-                margin-bottom: 2vw;
-                font-size: 4vw;
-                border: none;
-                overflow: visible;
-                text-align: left;
-                justify-content: flex-start;
-            }
-            .box-icon {
-                height: 15vw;
-            }
-            .headerButtons {
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-            }
-            .call-for-action-buttons {
-                flex-direction: column;
-                align-items: stretch;
-                gap: 20px;
-            }
-            .btn2:nth-child(1) {
-                width: 80vw;
-            }
-            .btn2:nth-child(2) {
-                width: 80vw;
-            }
-        }
+        imagesToPreload.forEach(src => {
+        const img = new Image();
+        img.src = src;
+        });
+    </script>
+</body>
+</html>
